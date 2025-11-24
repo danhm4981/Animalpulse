@@ -1,7 +1,7 @@
 
 #project-name{color:#edf9ff;
-margin:0 auto;
-text-align:center;}
+top:20px;
+left:50%;}
 
 
 /* البطاقة */
@@ -73,12 +73,6 @@ text-align:center;}
     background: #1abc9c;
     color: white;
 }
-.wrapper {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    direction: rtl;
-}
 /*الوان الروابط*/
 a:link{
 	color:blue;}
@@ -86,16 +80,16 @@ a:visited{color:#edf9ff;}
 a:hover{color:#ffbd59;}
 
 .clinics-row {
-    display: flex;      
-    flex-direction: column;/**/
+    display: flex !important;      /* يجبرهم يكونون جنب بعض */
+    flex-direction: row !important;
     gap: 20px;
-    padding:20px;             
+    padding: 20px;
+    flex-wrap: nowrap;             /* يمنع النزول تحت بعض */
 }
 
 .clinic-card {
-    width:100%;	/* يعطي كل كارد عرض ثابت */
-    max-width:320px;
-	background: #fff;
+    width: 250px;                  /* يعطي كل كارد عرض ثابت */
+    background: #fff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -311,4 +305,5 @@ input::placeholder {
 }
 .container {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
 }
